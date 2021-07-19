@@ -60,7 +60,7 @@ p {
 }
 
 .header .jumbotron {
-  background-image: url("../img/main-img.jpg");
+  background: image-url("main-img.jpg");
   background-size: cover;
   background-position: center top;
   position: relative;
@@ -81,7 +81,7 @@ nav.fixed {
 -------------------------------------------------- */
 /*下層ページ*/
 .under-layer .jumbotron {
-  background-image: url("../img/main-img.jpg");
+  background: image-url("main-img.jpg");
   background-size: cover;
   background-position: center top;
   margin-bottom: 0;
