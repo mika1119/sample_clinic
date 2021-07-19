@@ -8,7 +8,7 @@
       <h2 class="h1 font-weight-bold text-center pb-5">診療案内</h2>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <img src="img/medical-img01.jpg" alt="" class="img-fluid mb-3">
+          <%= image_tag(asset_path("medical-img01.jpg"), class: "img-fluid mb-3", alt: "") %>
           <h3 class="h5 font-weight-bold">一般歯科</h3>
           <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
           <div class="text-center">
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <img src="img/medical-img02.jpg" alt="" class="img-fluid mb-3">
+          <%= image_tag(asset_path("medical-img02.jpg"), class: "img-fluid mb-3", alt: "") %>
           <h3 class="h5 font-weight-bold">小児歯科</h3>
           <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
           <div class="text-center">
@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <img src="img/medical-img01.jpg" alt="" class="img-fluid mb-3">
+          <%= image_tag(asset_path("medical-img01.jpg"), class: "img-fluid mb-3", alt: "") %>
           <h3 class="h5 font-weight-bold">予防歯科</h3>
           <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
           <div class="text-center">
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <img src="img/medical-img02.jpg" alt="" class="img-fluid mb-3">
+          <%= image_tag(asset_path("medical-img02.jpg"), class: "img-fluid mb-3", alt: "") %>
           <h3 class="h5 font-weight-bold">矯正歯科</h3>
           <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
           <div class="text-center">
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <img src="img/medical-img01.jpg" alt="" class="img-fluid mb-3">
+          <%= image_tag(asset_path("medical-img01.jpg"), class: "img-fluid mb-3", alt: "") %>
           <h3 class="h5 font-weight-bold">口腔外科</h3>
           <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
           <div class="text-center">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <img src="img/medical-img02.jpg" alt="" class="img-fluid mb-3">
+          <%= image_tag(asset_path("medical-img02.jpg"), class: "img-fluid mb-3", alt: "") %>
           <h3 class="h5 font-weight-bold">審美歯科</h3>
           <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
           <div class="text-center">
@@ -165,8 +165,6 @@
 </main>
 
 <%= render "layouts/footer" %>
-
-
 
 <script>
   $(window).on('scroll', function() {
