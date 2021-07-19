@@ -37,7 +37,11 @@
   <!-- ******************* NAVI ******************** -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <div class="w-50"><a class="navbar-brand" href="/"><img src="img/logo.png" alt="" class="img-fluid w-75"></a></div>
+      <div class="w-50">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <%= image_tag(asset_path("logo.png"), class: "img-fluid w-75", alt: "") %>
+        <% end %>
+      </div>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
         <span class="navbar-toggler-icon"></span>
       </button>
