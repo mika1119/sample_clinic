@@ -1,0 +1,192 @@
+<%= render "layouts/header" %>
+
+<main>
+  <article class="container py-5 my-5">
+    <!-- お電話でのご予約・お問合せ -->
+    <section class="mb-5">
+      <h3 class="text-center mb-3"><span class="border-bottom pb-2" style="line-height: 3.5rem;"><i class="mr-3 fas fa-phone"></i>お電話でのご予約・お問合せ</span></h3>
+
+      <div class="d-md-flex justify-content-center align-items-center">
+        <p class="h3 p-3">03-1234-5678</p>
+        <p class="p-3"><span class="align-self-start bg-blue text-white rounded-pill px-3 py-2">受付時間</span></p>
+        <p class="p-3">9:00～13:00 / 15:00～18:00<br>
+          ※ 水・土の午後、日・祝日は休診</p>
+      </div>
+    </section>
+
+    <!-- WEBでのご予約・お問合せ -->
+    <section class="webcontact">
+      <h3 class="text-center mb-3"><span class="border-bottom pb-2" style="line-height: 3.5rem;"><i class="mr-3 fas fa-envelope"></i>WEBでのご予約・お問合せ</span></h3>
+
+      <h4 class="text-center py-3">WEBでのご予約の流れ</h4>
+
+      <ol class="step">
+        <li class="is-current">フォームからの仮予約受付</li>
+        <li>当院で予約内容の確認</li>
+        <li>当院より折り返しのご連絡</li>
+        <li>予約確定</li>
+      </ol>
+
+      <div class="py-5">
+        <form method="post">
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-0">ご用件</legend>
+              <div class="col-sm-10">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label">ご予約</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label">お問い合わせ</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label">その他</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">お名前<span class="ml-2 badge badge-pill badge-primary">必須</span></label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName" placeholder="お名前">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">電話番号</label>
+            <div class="col-sm-10">
+              <input type="tel" class="form-control" id="inputTel" placeholder="電話番号">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">メールアドレス<span class="ml-2 badge badge-pill badge-primary">必須</span></label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail" placeholder="メールアドレス">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-2">ご希望の連絡方法</div>
+            <div class="col-sm-10">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  メール
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  お電話
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">診察券番号</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputNum" placeholder="再診の方はご記入ください">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">ご予約希望日時</label>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-md-7 mb-3">
+                  <select class="custom-select d-block w-100" id="date" required>
+                    <option value="希望日なし">希望日なし</option>
+                    <option value="2月14日">2月14日</option>
+                    <option value="2月15日">2月15日</option>
+                    <option value="2月16日">2月16日</option>
+                    <option value="2月18日">2月18日</option>
+                    <option value="2月19日">2月19日</option>
+                    <option value="2月20日">2月20日</option>
+                    <option value="2月21日">2月21日</option>
+                    <option value="2月22日">2月22日</option>
+                    <option value="2月23日">2月23日</option>
+                    <option value="2月25日">2月25日</option>
+                    <option value="2月26日">2月26日</option>
+                    <option value="2月27日">2月27日</option>
+                    <option value="2月28日">2月28日</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    日にちを選択してください
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <select class="custom-select d-block w-100" id="time" required>
+                    <option value="希望時間なし">希望時間なし</option>
+                    <option value="9時">9時</option>
+                    <option value="9時半">9時半</option>
+                    <option value="10時">10時</option>
+                    <option value="10時半">10時半</option>
+                    <option value="11時">11時</option>
+                    <option value="11時半">11時半</option>
+                    <option value="12時">12時</option>
+                    <option value="12時半">12時半</option>
+                    <option value="15時">15時</option>
+                    <option value="15時半">15時半</option>
+                    <option value="16時">16時</option>
+                    <option value="16時半">16時半</option>
+                    <option value="17時">17時</option>
+                    <option value="17時半">17時半</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    時間を選択してください
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">お問い合わせ</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+              <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+  </article>
+</main>
+
+<%= render "layouts/footer" %>
+
+<script>
+  $(window).on('scroll', function() {
+    h = $('header').outerHeight();
+    $('header nav').toggleClass('fixed', $(this).scrollTop() > h)
+  });
+
+  // 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
+  (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      // Bootstrapカスタム検証スタイルを適用してすべてのフォームを取得
+      var forms = document.getElementsByClassName('needs-validation');
+
+      // ループして帰順を防ぐ
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
+</script>
+
