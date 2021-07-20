@@ -29,7 +29,7 @@
         <div class="bg-pink p-3 rounded-lg col-md-4">
           <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
           <p class="text-white">休診日および診療時間外に関係なく24時間受付</p>
-          <a class="btn bg-white" href="contact/index.html" role="button">予約する</a>
+          <%= link_to "予約する", "#", class: "btn bg-white", role: "button" %>
         </div>
       </div>
     </div>
@@ -47,12 +47,24 @@
       </button>
       <div class="collapse navbar-collapse" id="Navber">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="/">ホーム</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">診療案内</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">診療ポリシー</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">医療設備</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">院内紹介</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">お知らせ</a></li>
+          <li class="nav-item">
+            <%= link_to "ホーム", root_path, class: "nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "診療案内", "#information", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "診療ポリシー", "#policy", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "医療設備", "#facility", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "院内紹介", "#introduction", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "お知らせ", "#news", class: "nav-link" %>
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
