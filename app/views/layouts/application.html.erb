@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>SampleClinic</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <title>SampleClinic</title>
+  <meta name="description" content="サイトの説明文">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link rel="canonical" href="あなたのサイトURL">
+  <link rel="icon" type="image/png" href="ファビコンのパス" />
+  <!-- OGP設定 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="あなたのサイトURL" />
+  <meta property="og:image" content="SNSで表示させたい画像のパス" />
+  <meta property="og:title" content="ページタイトル" />
+  <meta property="og:description" content="サイトの説明文" />
+  <!-- Facebook用設定 -->
+  <meta property="fb:app_id" content="facebookのApp ID" />
+  <meta property="article:publisher" content="FacebookページのURL">
+  <!-- Twitter用設定 -->
+  <meta name="twitter:card" content="Twitterカードの種類">
+  <meta name="twitter:site" content="@ユーザー名">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+</head>
 
   <body>
     <%= yield %>

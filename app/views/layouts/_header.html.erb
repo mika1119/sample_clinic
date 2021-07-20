@@ -1,0 +1,73 @@
+<!-- ******************* HEADER ******************** -->
+<header class="header">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid mb-3" style="background-color:rgba(255,255,255,0.8);">
+      <div class="container py-3">
+        <div class="d-md-flex align-items-center">
+          <div class="pt-3 col-md-4">
+            <%= link_to root_path do %>
+              <%= image_tag(asset_path("logo.png"), class: "img-fluid", alt: "logo") %>
+            <% end %>
+          </div>
+          <div class="pt-3 col-md-8">
+            <h1>キャッチコピーが入ります</h1>
+            <p class="text-muted">サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container main-img">
+      <div class="d-md-flex flex-row justify-content-between">
+        <div class="bg-blue p-3 rounded-lg col-md-8 mr-md-3 mb-3 mb-md-0">
+          <p class="text-white h2"><span><i class="fas fa-phone mr-3"></i></span>03-1234-5678</p>
+          <div class="d-flex align-items-center mb-2">
+            <p class="bg-white rounded-pill px-3 py-2 mr-3 mb-0 text-center col-3 text-blue font-weight-bold">受付時間</p>
+            <p class="text-white h4">9:00～13:00 / 15:00～19:00</p>
+          </div>
+          <p class="text-white">※ 水曜の午後、日曜・祝日は休診<br>※ 土曜の午後は17：00まで受付</p>
+        </div>
+        <div class="bg-pink p-3 rounded-lg col-md-4">
+          <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
+          <p class="text-white">休診日および診療時間外に関係なく<br>24時間受付</p>
+          <%= link_to "予約する", "#", class: "btn bg-white", role: "button" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ******************* NAVI ******************** -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="w-50">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <%= image_tag(asset_path("logo.png"), class: "img-fluid w-75", alt: "") %>
+        <% end %>
+      </div>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="Navber">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <%= link_to "ホーム", root_path, class: "nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "診療案内", "#information", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "診療ポリシー", "#policy", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "医療設備", "#facility", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "院内紹介", "#introduction", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "お知らせ", "#news", class: "nav-link" %>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+</header>
