@@ -91,11 +91,24 @@
             <li class="nav-item">
               <%= link_to "WEBでのご予約・お問合せ", "#web", class: "nav-link" %>
             </li>
+          <%# 現在のページが診療案内ページ（information）のとき %>
+          <% elsif current_page?(information_path) %>
+            <li class="nav-item">
+              <%= link_to "ホーム", root_path, class: "nav-link active" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "一般歯科", "#sec1", class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "虫歯の進行度", "#sec2", class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "根幹治療について", "#sec3", class: "nav-link" %>
+            </li>
           <% end %>
         </ul>
       </div>
     </nav>
-    <%# 現在のページが診療案内ページ（information）のとき %>
   <% end %>
 
 </header>
