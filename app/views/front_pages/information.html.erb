@@ -1,2 +1,104 @@
-<h1>FrontPages#information</h1>
-<p>Find me in app/views/front_pages/information.html.erb</p>
+<%= render "layouts/header" %>
+
+<main>
+  <section class="py-5">
+    <div class="container my-5">
+      <h3 class="h1 font-weight-bold text-center pb-5">一般歯科</h3>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <%= image_tag(asset_path("sample-img.jpg"), class: "img-fluid rounded-circle mb-4", alt: "") %>
+          <h4>虫歯治療</h4>
+          <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-md-4 text-center">
+          <%= image_tag(asset_path("sample-img.jpg"), class: "img-fluid rounded-circle mb-4", alt: "") %>
+          <h4>歯周病治療</h4>
+          <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-md-4 text-center">
+          <%= image_tag(asset_path("sample-img.jpg"), class: "img-fluid rounded-circle mb-4", alt: "") %>
+          <h4>入れ歯</h4>
+          <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+  </section>
+
+  <section class="my-5 py-5 bg-lightblue">
+    <div class="container py-5">
+      <h2 class="h1 font-weight-bold text-center pb-5">虫歯の進行度</h2>
+      <ul class="d-lg-flex list-unstyled justify-content-between flow">
+        <li class="mb-4">
+          <span class="flow-icon">C0</span>
+          <dl>
+            <dt>要観察歯</dt>
+            <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+          </dl>
+        </li>
+        <li class="mb-4">
+          <span class="flow-icon">C1</span>
+          <dl>
+            <dt>エナメル質の虫歯</dt>
+            <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+          </dl>
+        </li>
+
+        <li class="mb-4">
+          <span class="flow-icon">C2</span>
+          <dl>
+            <dt>象牙質の虫歯</dt>
+            <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+          </dl>
+        </li>
+
+        <li class="mb-4">
+          <span class="flow-icon">C3</span>
+          <dl>
+            <dt>歯髄に達した虫歯</dt>
+            <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+          </dl>
+        </li>
+
+        <li class="mb-4">
+          <span class="flow-icon">C4</span>
+          <dl>
+            <dt>歯根に達した虫歯</dt>
+            <dd>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="py-5 container">
+    <h3 class="h1 font-weight-bold text-center pb-5">根幹治療について</h3>
+    <h4 class="h2">根幹治療とは</h4>
+    <p>このブログ記事では、Bootstrapに対応しており、スタイルが設定されたいくつかの異なるタイプのコンテンツを紹介している。基本的な文字の体裁、画像、およびコードはすべてサポート済み。</p>
+    <hr>
+    <p>文章に特に深い意味はありません。この組見本は自由に複製したり頒布することができます。このダミーテキストは自由に改変することが出来ます。ダミーテキストはダミー文書やダミー文章とも呼ばれることがあります。書体やレイアウトなどを確認するために用います。ダミーテキストはダミー文書やダミー文章とも呼ばれることがあります。</p>
+    <p>このダミーテキストは自由に改変することが出来ます。この組見本は自由に複製したり頒布することができます。このダミーテキストは自由に改変することが出来ます。本文用なので使い方を間違えると不自然に見えることもありますので要注意。</p>
+    <ul>
+      <li>番号なしリストの文章です。番号なしリストの文章です。</li>
+      <li>番号なしリストの文章です。番号なしリストの文章です。</li>
+      <li>番号なしリストの文章です。番号なしリストの文章です。</li>
+    </ul>
+    <p>段落の文章です。段落の文章です。段落の文章です。段落の文章です。段落の文章です。</p>
+    <ol>
+      <li>番号付きリストの文章です。番号付きリストの文章です。</li>
+      <li>番号付きリストの文章です。番号付きリストの文章です。</li>
+      <li>番号付きリストの文章です。番号付きリストの文章です。</li>
+    </ol>
+    <p>段落の文章です。段落の文章です。段落の文章です。段落の文章です。段落の文章です。</p>
+
+  </section>
+</main>
+
+<%= render "layouts/footer" %>
+
+<script>
+  $(window).on('scroll', function() {
+    h = $('header').outerHeight();
+    $('header nav').toggleClass('fixed', $(this).scrollTop() > h)
+  });
+
+</script>
